@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var currentDay = moment().format("dddd, MMMM Do");
+    var currentDay = moment();
     $("#currentDay").text(currentDay);
 
 
@@ -123,83 +123,84 @@ $(document).ready(function () {
 
         var renderEvent9am = $("#9amTable").text();
         localStorage.setItem("9amEvent", (renderEvent9am));
-
-        // 10AM event call
-        var eventCall10am = localStorage.getItem("10amEvent");
-        $("#10amTable").text(eventCall10am);
-
-        $(".btnFor10").on("click", function (event) {
-
-            var renderEvent10am = $("#10amTable").text();
-            localStorage.setItem("10amEvent", (renderEvent10am));
-        });
-
-        // 11am event call
-        var eventCall11am = localStorage.getItem("11amEvent");
-        $("#11amTable").text(eventCall11am);
-
-        $(".btnFor11").on("click", function (event) {
-
-            var renderEvent11am = $("#11amTable").text();
-            localStorage.setItem("11amEvent", (renderEvent11am));
-        });
-
-        // 12pm event call
-        var eventCall12pm = localStorage.getItem("12pmEvent");
-        $("#12pmTable").text(eventCall12pm);
-
-        $(".btnFor12").on("click", function (event) {
-
-            var renderEvent12pm = $("#12pmTable").text();
-            localStorage.setItem("12pmEvent", (renderEvent12pm));
-        });
-
-        // 1pm event call
-        var eventCall1pm = localStorage.getItem("1pmEvent");
-        $("#1pmTable").text(eventCall1pm);
-
-        $(".btnFor1").on("click", function (event) {
-
-            var renderEvent1pm = $("#1pmTable").text();
-            localStorage.setItem("1pmEvent", (renderEvent1pm));
-        });
-
-        // 2pm event call
-        var eventCall2pm = localStorage.getItem("2pmEvent");
-        $("#2pmTable").text(eventCall2pm);
-
-        $(".btnFor2").on("click", function (event) {
-
-            var renderEvent2pm = $("#2pmTable").text();
-            localStorage.setItem("2pmEvent", (renderEvent2pm));
-        });
-
-        // 3pm event call
-        var eventCall3pm = localStorage.getItem("3pmEvent");
-        $("#3pmTable").text(eventCall3pm);
-
-        $(".btnFor3").on("click", function (event) {
-
-            var renderEvent3pm = $("#3pmTable").text();
-            localStorage.setItem("3pmEvent", (renderEvent3pm));
-        });
-        // 4pm event call
-        var eventCall4pm = localStorage.getItem("4pmEvent");
-        $("#4pmTable").text(eventCall4pm);
-
-        $(".btnFor4").on("click", function (event) {
-
-            var renderEvent4pm = $("#4pmTable").text();
-            localStorage.setItem("4pmEvent", (renderEvent4pm));
-        });
-
-        //5pm event call
-        var eventCall5pm = localStorage.getItem("5pmEvent");
-        $("#5pmTable").text(eventCall5pm);
-
-        $(".btnFor5").on("click", function (event) {
-            var renderEvent5pm = $("#5pmTable").text();
-            localStorage.setItem("5pmEvent", (renderEvent5pm));
-        });
-
     });
+
+    // 10AM event call
+    var eventCall10am = localStorage.getItem("10amEvent");
+    $("#10amTable").text(eventCall10am);
+
+    $(".btnFor10").on("click", function (event) {
+
+        var renderEvent10am = $("#10amTable").text();
+        localStorage.setItem("10amEvent", (renderEvent10am));
+    });
+
+    // 11am event call
+    var eventCall11am = localStorage.getItem("11amEvent");
+    $("#11amTable").text(eventCall11am);
+
+    $(".btnFor11").on("click", function (event) {
+
+        var renderEvent11am = $("#11amTable").text();
+        localStorage.setItem("11amEvent", (renderEvent11am));
+    });
+
+    // 12pm event call
+    var eventCall12pm = localStorage.getItem("12pmEvent");
+    $("#12pmTable").text(eventCall12pm);
+
+    $(".btnFor12").on("click", function (event) {
+
+        var renderEvent12pm = $("#12pmTable").text();
+        localStorage.setItem("12pmEvent", (renderEvent12pm));
+    });
+
+    // 1pm event call
+    var eventCall1pm = localStorage.getItem("1pmEvent");
+    $("#1pmTable").text(eventCall1pm);
+
+    $(".btnFor1").on("click", function (event) {
+
+        var renderEvent1pm = $("#1pmTable").text();
+        localStorage.setItem("1pmEvent", (renderEvent1pm));
+    });
+
+    // 2pm event call
+    var eventCall2pm = localStorage.getItem("2pmEvent");
+    $("#2pmTable").text(eventCall2pm);
+
+    $(".btnFor2").on("click", function (event) {
+
+        var renderEvent2pm = $("#2pmTable").text();
+        localStorage.setItem("2pmEvent", (renderEvent2pm));
+    });
+
+    // 3pm event call
+    var eventCall3pm = localStorage.getItem("3pmEvent");
+    $("#3pmTable").text(eventCall3pm);
+
+    $(".btnFor3").on("click", function (event) {
+
+        var renderEvent3pm = $("#3pmTable").text();
+        localStorage.setItem("3pmEvent", (renderEvent3pm));
+    });
+    // 4pm event call
+    var eventCall4pm = localStorage.getItem("4pmEvent");
+    $("#4pmTable").text(eventCall4pm);
+
+    $(".btnFor4").on("click", function (event) {
+
+        var renderEvent4pm = $("#4pmTable").text();
+        localStorage.setItem("4pmEvent", (renderEvent4pm));
+    });
+
+    //5pm event call
+    var eventCall5pm = localStorage.getItem("5pmEvent");
+    $("#5pmTable").text(eventCall5pm);
+
+    $(".btnFor5").on("click", function (event) {
+        var renderEvent5pm = $("#5pmTable").text();
+        localStorage.setItem("5pmEvent", (renderEvent5pm));
+    });
+
+});
